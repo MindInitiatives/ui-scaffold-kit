@@ -41,7 +41,7 @@ export async function POST(req: NextRequest) {
 
   if (!apiKey || !aiProvider) {
     return new Response(
-      JSON.stringify({ error: "Missing required AI config" }),
+      JSON.stringify({ error: "Missing required AI config; Please provide your AI keys in the settings section above" }),
       { status: 400 }
     );
   }

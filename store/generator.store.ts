@@ -23,7 +23,7 @@ interface GeneratorState {
   config: GeneratorConfig;
   files: GeneratedFile[];
   jobId: string;
-  status: "idle" | "generating" | "done";
+  status: "idle" | "generating" | "done" | "failed";
   progress: number;
   updateConfig: (partial: Partial<GeneratorConfig>) => void;
 
